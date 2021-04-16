@@ -1,11 +1,6 @@
 [<img src="https://monitoringartist.github.io/managed-by-monitoringartist.png" alt="Managed by Monitoring Artist: DevOps / Docker / Kubernetes / AWS ECS / Zabbix / Zenoss / Terraform / Monitoring" align="right"/>](http://www.monitoringartist.com 'DevOps / Docker / Kubernetes / AWS ECS / Zabbix / Zenoss / Terraform / Monitoring')
 
-# Zabbix Docker Monitoring [![Build Status](https://travis-ci.org/monitoringartist/zabbix-docker-monitoring.svg?branch=master)](https://travis-ci.org/monitoringartist/zabbix-docker-monitoring) [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/monitoringartist/zabbix-docker-monitoring)
-
-If you like or use this project, please provide feedback to author - Star it ★
-and [write what's missing for you](https://docs.google.com/forms/d/e/1FAIpQLSdYIokAyIMs2Qv19fzPxMWBubS9ESOYjJ2w_P222k5SuQuvoA/viewform).
-
-----
+# Zabbix Docker Monitoring ![Build binaries](https://github.com/monitoringartist/zabbix-docker-monitoring/workflows/Test%20and%20Build/badge.svg) [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/monitoringartist/zabbix-docker-monitoring)
 
 **Overview of Monitoring Artist (dockerized) monitoring ecosystem:**
 
@@ -78,24 +73,28 @@ docker run --rm \
   monitoringartist/zabbix-templates
 ```
 
-Download latest build of `zabbix_module_docker.so` for Zabbix 3.4/3.2/3.0 agents:
+Download latest build of `zabbix_module_docker.so` for Zabbix 5.2/5.0/4.0 agents:
 
-| OS           | Module for Zabbix 3.4 | Module for Zabbix 3.2 | Module for Zabbix 3.0 |
+| OS           | Module for Zabbix 5.2 | Module for Zabbix 5.0 | Module for Zabbix 4.0 |
 | ------------ | :-------------------: | :-------------------: | :-------------------: |
-| Amazon Linux | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/amazonlinux/3.4/zabbix_module_docker.so) | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/amazonlinux/3.2/zabbix_module_docker.so) | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/amazonlinux/3.0/zabbix_module_docker.so) |
-| CentOS 7     | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/centos7/3.4/zabbix_module_docker.so) | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/centos7/3.2/zabbix_module_docker.so) | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/centos7/3.0/zabbix_module_docker.so) |
-| CentOS 6     | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/centos6/3.4/zabbix_module_docker.so) | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/centos6/3.2/zabbix_module_docker.so) | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/centos6/3.0/zabbix_module_docker.so) |
-| Debian 9     | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/debian9/3.4/zabbix_module_docker.so) | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/debian9/3.2/zabbix_module_docker.so) | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/debian9/3.0/zabbix_module_docker.so) |
-| Debian 8     | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/debian8/3.4/zabbix_module_docker.so) | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/debian8/3.2/zabbix_module_docker.so) | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/debian8/3.0/zabbix_module_docker.so) |
-| Debian 7     | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/debian7/3.4/zabbix_module_docker.so) | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/debian7/3.2/zabbix_module_docker.so) | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/debian7/3.0/zabbix_module_docker.so) |
-| Fedora 25    | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/fedora25/3.4/zabbix_module_docker.so) | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/fedora25/3.2/zabbix_module_docker.so) | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/fedora25/3.0/zabbix_module_docker.so) |
-| Fedora 24    | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/fedora25/3.4/zabbix_module_docker.so) | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/fedora25/3.2/zabbix_module_docker.so) | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/fedora24/3.0/zabbix_module_docker.so) |
-| openSUSE 42  | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/opensuse42/3.4/zabbix_module_docker.so) | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/opensuse42/3.2/zabbix_module_docker.so) | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/opensuse42/3.0/zabbix_module_docker.so) |
-| RHEL 7       | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/centos7/3.4/zabbix_module_docker.so) | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/centos7/3.2/zabbix_module_docker.so) | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/centos7/3.0/zabbix_module_docker.so) |
-| RHEL 6       | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/centos6/3.4/zabbix_module_docker.so) | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/centos6/3.2/zabbix_module_docker.so) | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/centos6/3.0/zabbix_module_docker.so) |
-| Ubuntu 17    | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/ubuntu17/3.4/zabbix_module_docker.so) | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/ubuntu17/3.2/zabbix_module_docker.so) | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/ubuntu17/3.0/zabbix_module_docker.so) |
-| Ubuntu 16    | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/ubuntu16/3.4/zabbix_module_docker.so) | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/ubuntu16/3.2/zabbix_module_docker.so) | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/ubuntu16/3.0/zabbix_module_docker.so) |
-| Ubuntu 14    | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/ubuntu14/3.4/zabbix_module_docker.so) | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/ubuntu14/3.2/zabbix_module_docker.so) | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/ubuntu14/3.0/zabbix_module_docker.so) |
+| Amazon Linux 2 | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/amazonlinux2/5.2/zabbix_module_docker.so) | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/amazonlinux2/5.0/zabbix_module_docker.so) | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/amazonlinux2/4.0/zabbix_module_docker.so) |
+| Amazon Linux 1 | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/amazonlinux1/5.2/zabbix_module_docker.so) | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/amazonlinux1/5.0/zabbix_module_docker.so) | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/amazonlinux1/4.0/zabbix_module_docker.so) |
+| CentOS 8     | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/centos8/5.2/zabbix_module_docker.so) | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/centos8/5.0/zabbix_module_docker.so) | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/centos8/4.0/zabbix_module_docker.so) |
+| CentOS 7     | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/centos7/5.2/zabbix_module_docker.so) | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/centos7/5.0/zabbix_module_docker.so) | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/centos7/4.0/zabbix_module_docker.so) |
+| Debian 10     | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/debian10/5.2/zabbix_module_docker.so) | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/debian10/5.0/zabbix_module_docker.so) | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/debian10/4.0/zabbix_module_docker.so) |
+| Debian 9     | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/debian9/5.2/zabbix_module_docker.so) | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/debian9/5.0/zabbix_module_docker.so) | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/debian9/4.0/zabbix_module_docker.so) |
+| Debian 8     | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/debian8/5.2/zabbix_module_docker.so) | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/debian8/5.0/zabbix_module_docker.so) | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/debian8/4.0/zabbix_module_docker.so) |
+| Fedora 33    | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/fedora33/5.2/zabbix_module_docker.so) | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/fedora33/5.0/zabbix_module_docker.so) | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/fedora33/4.0/zabbix_module_docker.so) |
+| Fedora 32    | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/fedora32/5.2/zabbix_module_docker.so) | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/fedora32/5.0/zabbix_module_docker.so) | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/fedora32/4.0/zabbix_module_docker.so) |
+| Fedora 31    | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/fedora31/5.2/zabbix_module_docker.so) | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/fedora31/5.0/zabbix_module_docker.so) | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/fedora31/4.0/zabbix_module_docker.so) |
+| openSUSE 15  | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/opensuse15/5.2/zabbix_module_docker.so) | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/opensuse15/5.0/zabbix_module_docker.so) | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/opensuse15/4.0/zabbix_module_docker.so) |
+| openSUSE 42  | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/opensuse42/5.2/zabbix_module_docker.so) | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/opensuse42/5.0/zabbix_module_docker.so) | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/opensuse42/4.0/zabbix_module_docker.so) |
+| RHEL 8       | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/centos8/5.2/zabbix_module_docker.so) | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/centos8/5.0/zabbix_module_docker.so) | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/centos8/4.0/zabbix_module_docker.so) |
+| RHEL 7       | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/centos7/5.2/zabbix_module_docker.so) | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/centos7/5.0/zabbix_module_docker.so) | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/centos7/4.0/zabbix_module_docker.so) |
+| Ubuntu 20    | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/ubuntu20/5.2/zabbix_module_docker.so) | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/ubuntu20/5.0/zabbix_module_docker.so) | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/ubuntu20/4.0/zabbix_module_docker.so) |
+| Ubuntu 18    | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/ubuntu18/5.2/zabbix_module_docker.so) | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/ubuntu18/5.0/zabbix_module_docker.so) | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/ubuntu18/4.0/zabbix_module_docker.so) |
+| Ubuntu 16    | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/ubuntu16/5.2/zabbix_module_docker.so) | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/ubuntu16/5.0/zabbix_module_docker.so) | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/ubuntu16/4.0/zabbix_module_docker.so) |
+| Ubuntu 14    | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/ubuntu14/5.2/zabbix_module_docker.so) | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/ubuntu14/5.0/zabbix_module_docker.so) | [Download](https://github.com/monitoringartist/zabbix-docker-monitoring/raw/gh-pages/ubuntu14/4.0/zabbix_module_docker.so) |
 
 If the provided build doesn't work on your system, please see section [Compilation](#compilation).
 You can check [folder dockerfiles](https://github.com/monitoringartist/zabbix-docker-monitoring/tree/master/dockerfiles),
@@ -221,12 +220,12 @@ You have to compile the module if provided binary doesn't work on your system.
 Basic compilation steps (please use right Zabbix branch version):
 
 ```bash
-# Required CentOS/RHEL apps:   yum install -y wget autoconf automake gcc git pcre-devel
-# Required Debian/Ubuntu apps: apt-get install -y wget autoconf automake gcc git make pkg-config libpcre3-dev
-# Required Fedora apps:        dnf install -y wget autoconf automake gcc git make pcre-devel
-# Required openSUSE apps:      zypper install -y wget autoconf automake gcc git make pkg-config pcre-devel
+# Required CentOS/RHEL apps:   yum install -y wget autoconf automake gcc git pcre-devel jansson-devel
+# Required Debian/Ubuntu apps: apt-get install -y wget autoconf automake gcc git make pkg-config libpcre3-dev libjansson-dev
+# Required Fedora apps:        dnf install -y wget autoconf automake gcc git make pcre-devel jansson-devel
+# Required openSUSE apps:      zypper install -y wget autoconf automake gcc git make pkg-config pcre-devel libjansson-devel
 # Required Gentoo apps 1:      emerge net-misc/wget sys-devel/autoconf sys-devel/automake sys-devel/gcc
-# Required Gentoo apps 2:      emerge dev-vcs/git sys-devel/make dev-util/pkgconfig dev-libs/libpcre
+# Required Gentoo apps 2:      emerge dev-vcs/git sys-devel/make dev-util/pkgconfig dev-libs/libpcre dev-libs/jansson
 # Source, use your version:    git clone -b 4.2.2 --depth 1 https://github.com/zabbix/zabbix.git /usr/src/zabbix
 cd /usr/src/zabbix
 ./bootstrap.sh
@@ -463,6 +462,10 @@ curl --unix-socket /var/run/docker.sock --no-buffer -XGET v1.24/containers/json?
 - https://www.kernel.org/doc/Documentation/cgroup-v1/cpuacct.txt
 - https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Resource_Management_Guide/index.html
 
+# Built-in Zabbix Docker monitoring
+
+Keep in mind that Zabbix itself supports Docker monitoring. It is available only for agent2 - see [Zabbix agent2 doc](https://www.zabbix.com/integrations/docker).
+
 # Contributors
 
 Thank you to all [project contributors](https://github.com/monitoringartist/zabbix-docker-monitoring/graphs/contributors).
@@ -475,9 +478,9 @@ Kubernetes, ECS, AWS, Google GCP, Terraform, Lambda, Zabbix, Grafana, Elasticsea
 Kibana, Prometheus, Sysdig,...
 
 Summary:
-* 3000+ [GitHub](https://github.com/monitoringartist/) stars
-* 100 000+ [Grafana dashboard](https://grafana.net/monitoringartist) downloads
-* 15 000 000+ [Docker images](https://hub.docker.com/u/monitoringartist/) downloads
+* 4 000+ [GitHub](https://github.com/monitoringartist/) stars
+* 10 000 000+ [Grafana dashboard](https://grafana.net/monitoringartist) downloads
+* 60 000 000+ [Docker images](https://hub.docker.com/u/monitoringartist/) downloads
 
 Professional devops / monitoring / consulting services:
 

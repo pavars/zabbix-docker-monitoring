@@ -1,18 +1,20 @@
 # https://github.com/monitoringartist/zabbix-docker-monitoring
 
 # Define required CentOS version by using FROM tag. Avalaible: centos7/centos6/...
-FROM fedora:29
+FROM fedora:latest
 
 MAINTAINER "Jan Garaj" <info@monitoringartist.com>
-
-# Define required Zabbix version (<version>) or release (release/<version>), e.g. 4.2.2, or release/4.2
-ENV ZABBIX_VERSION=release/4.2
 
 WORKDIR /root
 
 RUN \
-   dnf -y -q install git automake autoconf gcc make pcre-devel 1>/dev/null && \
+   dnf -y -q install git automake autoconf gcc make pcre-devel jansson-devel 1>/dev/null
+
+RUN \
    git clone -q https://github.com/monitoringartist/zabbix-docker-monitoring
+
+# Define required Zabbix version (<version>) or release (release/<version>), e.g. 4.2.2, or release/4.2
+ARG ZABBIX_VERSION=release/5.2
 
 RUN \
    git clone -b ${ZABBIX_VERSION} --depth 1 https://github.com/zabbix/zabbix.git ~/zabbix && \

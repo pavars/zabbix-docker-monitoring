@@ -1,19 +1,22 @@
 # https://github.com/monitoringartist/zabbix-docker-monitoring
 
-# Define required Debian version by using FROM tag. Avalaible: wheezy/jessie/...
-FROM ubuntu:18.04
+# Define required Ubuntu version by using FROM tag. Avalaible: wheezy/jessie/...
+FROM ubuntu:latest
 
 MAINTAINER "Jan Garaj" <info@monitoringartist.com>
-
-# Define required Zabbix version (<version>) or release (release/<version>), e.g. 4.2.2, or release/4.2
-ENV ZABBIX_VERSION=release/4.2
 
 WORKDIR /root
 
 RUN \
    apt-get -qq update 1>/dev/null && \
-   apt-get -qq --assume-yes install git automake autoconf gcc make pkg-config libpcre3-dev 1>/dev/null && \
+   ln -snf /usr/share/zoneinfo/UTC /etc/localtime && \
+   apt-get -qq --assume-yes install git automake autoconf gcc make pkg-config libpcre3-dev libjansson-dev 1>/dev/null
+
+RUN \
    git clone -q https://github.com/monitoringartist/zabbix-docker-monitoring
+
+# Define required Zabbix version (<version>) or release (release/<version>), e.g. 4.2.2, or release/4.2
+ARG ZABBIX_VERSION=release/5.2
 
 RUN \
    git clone -b ${ZABBIX_VERSION} --depth 1 https://github.com/zabbix/zabbix.git ~/zabbix && \
